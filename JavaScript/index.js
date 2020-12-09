@@ -1,4 +1,5 @@
-
+// ------------------------------------------------------------------------------
+//Hero --------------------------------------------------------------------------
 $(".russian-disabled, .russian").click(function() {
     console.log("russian");
     if (window.innerWidth <= 500) { $(".greeting").html("Здравстуй&shy;те, я Лана.<br><br>");}
@@ -12,7 +13,6 @@ $(".russian-disabled, .russian").click(function() {
     $(".vietnam, .vietnam-disabled").addClass("vietnam-disabled");
     $(".vietnam, .vietnam-disabled").removeClass("vietnam");
 })
-
 $(".english-disabled, .english").click(function() {
     console.log("english");
     $(".greeting").text("Hello, my name is Lan.");
@@ -25,7 +25,6 @@ $(".english-disabled, .english").click(function() {
     $(".russian, .russian-disabled").addClass("russian-disabled");
     $(".russian, .russian-disabled").removeClass("russian");
 })
-
 $(".vietnam-disabled, .vietnam").click(function() {
     console.log("vietnam");
     $(".greeting").text("Xin chào, mình là Lan.");
@@ -48,3 +47,21 @@ $("#down").click(function(e) {
         'scrollTop': $(target).offset().top - offset
     },'slow', function() {});
 });
+// ------------------------------------------------------------------------------
+//Scroll Behaviour --------------------------------------------------------------
+$(document).on("scroll", function() {
+    var pageTop = $(document).scrollTop()
+    var pageBottom = pageTop + $(window).height()
+    var tags = $(".section")
+
+    for (var i = 0; i < tags.length; i++) {
+        var tag = tags[i]
+
+        if ($(tag).position().top < pageBottom) { 
+            $(tag).addClass("visible")
+        }
+        else { 
+            $(tag).removeClass("visible")
+        }
+    }
+})

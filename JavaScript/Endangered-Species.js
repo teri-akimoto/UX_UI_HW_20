@@ -1,3 +1,23 @@
+// ------------------------------------------------------------------------------
+//Scroll Behaviour --------------------------------------------------------------
+$(document).on("scroll", function() {
+    var pageTop = $(document).scrollTop()
+    var pageBottom = pageTop + $(window).height()
+    var tags = $(".section")
+
+    for (var i = 0; i < tags.length; i++) {
+        var tag = tags[i]
+
+        if ($(tag).position().top < pageBottom) { 
+            $(tag).addClass("visible")
+        }
+        else { 
+            $(tag).removeClass("visible")
+        }
+    }
+})
+// ------------------------------------------------------------------------------
+//Side Nav ----------------------------------------------------------------------
 $("#summary-tab, #ux-research-tab, #definition-tab, #prototyping-tab, #final-tab, #reflection-tab").click(function(e) {
     e.preventDefault();
     var offset = 0;
@@ -7,7 +27,6 @@ $("#summary-tab, #ux-research-tab, #definition-tab, #prototyping-tab, #final-tab
         'scrollTop': $(target).offset().top - offset
     },'slow', function() {});
 });
-
 $(".side-case-menu").click(function() {
     if($(window).width() < 500) {  
         if ($(".side-case-menu").height() > 20) {
