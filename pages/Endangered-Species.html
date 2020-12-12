@@ -106,645 +106,380 @@ Side Nav
 <!-- =======================================
 Hero title
 ======================================= -->
-<div class="endangered-body">
-    <h1>Endangered Species Redesign</h1>
-    <section class="case-hero">
-        <div class="case-img1"></div>
-    </section>
-</div>
+<section class="container-fluid d-grid endangered-body">
+    <div class="row container-fluid p-0 justify-content-center">
+        <div class="case-hero px-0 col-6">
+            <div>
+                <h1 class="text-center">Endangered Species Redesign</h1>
+                <div class="case-img1"></div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- =======================================
 Summary
 ======================================= -->
-<div id="summary-body" class="summary-body">
-    <section class="summary">
-        <div class="over-column1">
-            <h2>Problem</h2>
-            <p>The government website shows <span class="bold">inconsistencies</span> in UI design and a <span class="bold">confusing</span> use of multiple search bars which <span class="bold">undersells</span> its amazing database on all endangered species in the US and abroad.</p>
-            <br>
-            <h2>Solution</h2>
-            <p>Bring out the <span class="bold">best key features</span> of this website:
-            <ul class=".ulist">
-                <li>a unified search engine;</li>
-                <li>"Search Species in Your Area" user flow;</li>
-                <li>ability to save visual information for later use in the field.</li>
-            </ul></p>
+<section id="summary-body" class="container-fluid d-grid justify-content-center summary-body">
+    <div class="row px-0 container-fluid justify-content-center">
+        <div class="container-fluid wrapper summary col-6 px-0 row justify-content-center">
+            <div class="over-column p-0 pe-4 col-6">
+                <h2>Problem</h2>
+                <p>The government website shows <span class="bold">inconsistencies</span> in UI design and a <span class="bold">confusing</span> use of multiple search bars which <span class="bold">undersells</span> its amazing database on all endangered species in the US and abroad.</p>
+                <br>
+                <h2>Solution</h2>
+                <p>Bring out the <span class="bold">best key features</span> of this website:
+                <ul class=".ulist">
+                    <li>a unified search engine;</li>
+                    <li>"Search Species in Your Area" user flow;</li>
+                    <li>ability to save visual information for later use in the field.</li>
+                </ul></p>
+            </div>
+            <div class="over-column p-0 ps-4 col-6">
+                <h2>Team</h2>
+                <p>Team members: Jerry Vu, Ricky Liu, Hoang Lan Nguyen</p>
+                <p>My role: UX research, IA & Site remapping, user testing, UI design, high-fidelity protototyping</p>
+                <br>
+                <h2>Tools</h2>
+                <p>Figma, Miro, inVision, Google Drive, Zoom, Discord</p>
+            </div>
         </div>
-        <div class="over-column2">
-            <h2>Team</h2>
-            <p>Team members: Jerry Vu, Ricky Liu, Hoang Lan Nguyen</p>
-            <p>My role: UX research, IA & Site remapping, user testing, UI design, high-fidelity protototyping</p>
-            <br>
-            <h2>Tools</h2>
-            <p>Figma, Miro, inVision, Google Drive, Zoom, Discord</p>
-        </div>
-    </section>
-</div>
+    </div> 
+</section>
 <!-- =======================================
 User Research
 ======================================= -->
-<div class="case-p-body section" id="ux-research-body">
-    <section class="case-p-section">
-        <div class="case-p">
-        <h2>User Research</h2>
-        <p>Although our user persona wasn’t based on prior user research or official website demographics, 
-            our user was essential to find out <span class="bold">what he would do on the website</span> 
-            and what would <span class="bold">motivate</span> him to visit it in the first place. So who’s our user? 
-            <br>
-            Michael is a carpenter from Mariposa County, California. He loves nature, especially camping/hiking 
+<section class="container-fluid d-grid case-p-body" id="ux-research-body">
+    <div class="row p-0 container-fluid justify-content-center case-p-section">
+        <div class="case-p col-6 section">
+            <h2>User Research</h2>
+            <p>Although our user persona wasn’t based on prior user research or official website demographics, 
+                our user was essential to find out <span class="bold">what he would do on the website</span> 
+                and what would <span class="bold">motivate</span> him to visit it in the first place. So who’s our user?</p> 
+            <p>Michael is a carpenter from Mariposa County, California. He loves nature, especially camping/hiking 
             with his wife and dog. He wants to find out what potentially threatened species live in his area so he can 
             <span class="bold">hike/camp responsibly</span>.
-            <br>
-            How can he distinguish what species to look out for and avoid?
-        </p></div>
-        <a href="#img-id"><div class="click-image">
-            <img src="../images/Endangered/endangered-species-proto-persona.jpg" width="600px" title="proto persona: Michael McKinley" alt="proto persona Michael McKinley">
-            <div class="expand-icon"></div>
-        </div></a>
-        <a href="#_" id="img-id" class="click-overlay proto-persona-img"><div>
-            <img src="../images/Endangered/endangered-species-proto-persona.jpg" width="600px" title="proto persona: Michael McKinley" alt="proto persona Michael McKinley">
-            <div class="shrink-icon"></div>
-        </div></a>
-    </section>
-</div>
-<div class="case-p-body">
-    <section class="case-p-section">
-        <div class="case-p section">
-        <h2>Task Analysis</h2>
-        <p>We identified a user flow for <span class="bold">how Michael would use the current website
-            </span> and conducted heuristic evaluation for the key features he'd interact with to achieve his goal 
-            (use the slide deck to see heuristic evaluation for each page).
-        </p></div>
-       <div class="click-image section">
-            <div class="user-path">
-                <img src="../images/Endangered/endangered-species-user-path.png" width="600px" title="current user path" alt="current user path">
-                <div class="expand-icon expand-user"></div>
+            </p>
+            <p>How can he distinguish what species to look out for and avoid?
+            </p>
+            <a href="#user-persona-overlay" class="click-image mt-5">
+                <div class="click-wrap user-persona">
+                    <img src="../images/Endangered/endangered-species-proto-persona.jpg" width="1000px" 
+                    title="Proto persona: Michael McKinley" alt="Proto persona: Michael McKinley">
+                    <div class="expand-icon"></div>
+                </div>
+            </a>
+        </div>
+        <a href="#_" id="user-persona-overlay" class="position-fixed image-overlay">
+            <div class="d-flex overlay-wrap justify-content-center align-items-center">
+                <div class="d-flex justify-content-center align-items-center position-relative image-modal">
+                    <img src="../images/Endangered/endangered-species-proto-persona.jpg" width="1000px" 
+                    title="Proto persona: Michael McKinley" alt="Proto persona: Michael McKinley">
+                    <div class="shrink-icon"></div>
+                </div>
+            </div> 
+        </a>
+    </div>
+</section>
+
+<section class="container-fluid d-grid case-p-body section">
+    <div class="row p-0 justify-content-center case-p-section">
+        <div class="mx-auto col-6 case-p section">
+            <h2>Task Analysis</h2>
+            <p>We identified a user flow for <span class="bold">how Michael would use the current website
+                </span> and conducted heuristic evaluation for the key features he'd interact with to achieve his goal 
+                (use the slide deck to see heuristic evaluation for each page).
+            </p>
+            <p>There were several search fields which presented a preliminary obstacle for Michael. Coupled with the layout of the landing page, he feels lost. 
+                Once he finds the correct search field ("Species in Your County"), he needs to navigate through a completely different website that doesn't have the header navigation. The table layout for the search results doesn't indicate the ability to sort results by the column property.</p>
+            <p>As fellow users, even we struggled to navigate through the website for the first hour of usage, at which point a casual user like Michael would have given up.</p>
+            <div id="user-path" class="carousel slide carousel-fade" data-bs-touch="true" data-interval="false">
                 <div class="image-description">
-                    <p>Our user’s journey on the current website.</p>
-                    <div class="bullet-row">
-                        <div class="bullet-user1 active-bullet"></div>
-                        <div class="bullet-user2 bullet"></div>
-                        <div class="bullet-user3 bullet"></div>
-                        <div class="bullet-user4 bullet"></div>
-                        <div class="bullet-user5 bullet"></div>
-                        <div class="bullet-user6 bullet"></div>
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#user-path" data-bs-slide-to="0" class="bullet active"></li>
+                        <li data-bs-target="#user-path" data-bs-slide-to="1" class="bullet"></li>
+                        <li data-bs-target="#user-path" data-bs-slide-to="2" class="bullet"></li>
+                        <li data-bs-target="#user-path" data-bs-slide-to="3" class="bullet"></li>
+                        <li data-bs-target="#user-path" data-bs-slide-to="4" class="bullet"></li>
+                        <li data-bs-target="#user-path" data-bs-slide-to="5" class="bullet"></li>
+                    </ol>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/Endangered/endangered-species-user-path.png" 
+                        title="Navigation evaluation - so many search fields on an overwhelming landing page" alt="Navigation evaluation - so many search fields on an overwhelming landing page" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Endangered/Nav-Eval-1-Home.jpg" width="1000px" 
+                        title="Navigation evaluation - home page" alt="Navigation evaluation - home page" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Endangered/Nav-Eval-2-Search-Results-I.jpg" width="1000px" 
+                        title="Navigation evaluation - search results in confusing table layout" alt="Navigation evaluation - search results in confusing table layout" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Endangered/Nav-Eval-3-Search-Results-II.jpg" width="1000px" 
+                        title="Navigation evaluation - results filtered by mammals" alt="Navigation evaluation - results filtered by mammals" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Endangered/Nav-Eval-4-Species-Profile.jpg" width="1000px" 
+                        title="Navigation evaluation - species profile navigation is underdeveloped" alt="Navigation evaluation - species profile navigation is underdeveloped" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Endangered/Nav-Eval-5.jpg" width="1000px" 
+                        title="Navigation evaluation - only one low quality profile image" alt="Navigation evaluation - only one low quality profile image" class="d-block w-100">
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#user-path" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#user-path" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
             </div>
         </div>
-        <div id="user-path1" class="full-deck section">
-            <div class="full-wrap">
-            <div class="overlay-center">
-                <img src="../images/Endangered/endangered-species-user-path.png" width="1000px" title="current user path" alt="current user path">
-                <div class="shrink-icon"></div>
-                <div class="image-description">
-                    <p>Our user’s journey on the current website.</p>
-                    <div class="bullet-row">
-                        <div class="bullet-user1 active-bullet"></div>
-                        <div class="bullet-user2 bullet"></div>
-                        <div class="bullet-user3 bullet"></div>
-                        <div class="bullet-user4 bullet"></div>
-                        <div class="bullet-user5 bullet"></div>
-                        <div class="bullet-user6 bullet"></div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div id="user-path2" class="full-deck section">
-            <div class="full-wrap">
-            <div class="overlay-center">
-                <img src="../images/Endangered/Nav-Eval-1-Home.jpg" width="1000px" title="navigation evaluation - home page" alt="navigation evaluation - home page">
-                <div class="shrink-icon"></div>
-                <div class="image-description">
-                    <p>Heuristic evaluation (1/5)</p>
-                    <div class="bullet-row">
-                        <div class="bullet-user1 bullet"></div>
-                        <div class="bullet-user2 active-bullet"></div>
-                        <div class="bullet-user3 bullet"></div>
-                        <div class="bullet-user4 bullet"></div>
-                        <div class="bullet-user5 bullet"></div>
-                        <div class="bullet-user6 bullet"></div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div id="user-path3" class="full-deck section">
-            <div class="full-wrap">
-            <div class="overlay-center">
-                <img src="../images/Endangered/Nav-Eval-2-Search-Results-I.jpg" width="1000px" title="navigation evaluation - search results 1" alt="navigation evaluation - search results 1">
-                <div class="shrink-icon"></div>
-                <div class="image-description">
-                    <p>Heuristic evaluation (2/5)</p>
-                    <div class="bullet-row">
-                        <div class="bullet-user1 bullet"></div>
-                        <div class="bullet-user2 bullet"></div>
-                        <div class="bullet-user3 active-bullet"></div>
-                        <div class="bullet-user4 bullet"></div>
-                        <div class="bullet-user5 bullet"></div>
-                        <div class="bullet-user6 bullet"></div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div id="user-path4" class="full-deck section">
-            <div class="full-wrap">
-            <div class="overlay-center">
-                <img src="../images/Endangered/Nav-Eval-3-Search-Results-II.jpg" width="1000px" title="navigation evaluation - search results 2" alt="navigation evaluation - search results 2">
-                <div class="shrink-icon"></div>
-                <div class="image-description">
-                    <p>Heuristic evaluation (3/5)</p>
-                    <div class="bullet-row">
-                        <div class="bullet-user1 bullet"></div>
-                        <div class="bullet-user2 bullet"></div>
-                        <div class="bullet-user3 bullet"></div>
-                        <div class="bullet-user4 active-bullet"></div>
-                        <div class="bullet-user5 bullet"></div>
-                        <div class="bullet-user6 bullet"></div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div id="user-path5" class="full-deck section">
-            <div class="full-wrap">
-            <div class="overlay-center">
-                <img src="../images/Endangered/Nav-Eval-4-Species-Profile.jpg" width="1000px" title="navigation evaluation - species profile" alt="navigation evaluation - species profile">
-                <div class="shrink-icon"></div>
-                <div class="image-description">
-                    <p>Heuristic evaluation (4/5)</p>
-                    <div class="bullet-row">
-                        <div class="bullet-user1 bullet"></div>
-                        <div class="bullet-user2 bullet"></div>
-                        <div class="bullet-user3 bullet"></div>
-                        <div class="bullet-user4 bullet"></div>
-                        <div class="bullet-user5 active-bullet"></div>
-                        <div class="bullet-user6 bullet"></div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div id="user-path6" class="full-deck section">
-            <div class="full-wrap">
-            <div class="overlay-center">
-                <img src="../images/Endangered/Nav-Eval-5.jpg" width="1000px" title="navigation evaluation - full size profile picture" alt="navigation evaluation - full size profile picture">
-                <div class="shrink-icon"></div>
-                <div class="image-description">
-                    <p>Heuristic evaluation (5/5)</p>
-                    <div class="bullet-row">
-                        <div class="bullet-user1 bullet"></div>
-                        <div class="bullet-user2 bullet"></div>
-                        <div class="bullet-user3 bullet"></div>
-                        <div class="bullet-user4 bullet"></div>
-                        <div class="bullet-user5 bullet"></div>
-                        <div class="bullet-user6 active-bullet"></div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
-</div>
-<div class="case-p-body">
-    <section class="case-p-section">
-        <div class="case-p section">
+    </div>
+</section>
+<section class="container-fluid d-grid case-p-body section">
+    <div class="row p-0 container-fluid justify-content-center p-0 case-p-section">
+        <div class="case-p section col-6">
             <p>We then conducted a usability test on 5 users to identify current pain points and organized the findings using the prioritization matrix (use the slide deck to see test notes).
-            <br>
-            Interesting insights include:
-            <ul class=".ulist">
-                <li>Users want a <span class="bold">visually appealing</span> website that presents information in a 
-                    <span class="bold">clear hierarchy</span> and order.</li>
-                <li>Navigation throughout the website is <span class="bold">inconsistent</span> and unclear, <span class="bold">difficult</span> to use.</li>
-            </ul></p>
+            </p>
+            <p>Interesting insights include:
+                <ul class=".ulist">
+                    <li>Users want a <span class="bold">visually appealing</span> website that presents information in a 
+                        <span class="bold">clear hierarchy</span> and order.</li>
+                    <li>Navigation throughout the website is <span class="bold">inconsistent</span> and unclear, <span class="bold">difficult</span> to use.</li>
+                </ul>
+            </p>
+            <div id="usability-test" class="carousel slide carousel-fade" data-bs-touch="true" data-interval="false">
+                <div class="image-description">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#usability-test" data-bs-slide-to="0" class="bullet active"></li>
+                        <li data-bs-target="#usability-test" data-bs-slide-to="1" class="bullet"></li>
+                        <li data-bs-target="#usability-test" data-bs-slide-to="2" class="bullet"></li>
+                        <li data-bs-target="#usability-test" data-bs-slide-to="3" class="bullet"></li>
+                        <li data-bs-target="#usability-test" data-bs-slide-to="4" class="bullet"></li>
+                        <li data-bs-target="#usability-test" data-bs-slide-to="5" class="bullet"></li>
+                    </ol>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/Endangered/endangered-species-prioritization-matrix.jpg" width="1000px" 
+                        title="Findings prioritization matrix" alt="Findings prioritization matrix" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Endangered/Data-1-Home-Page.jpg" width="1000px" 
+                        title="Findings - home page" alt="Findings - home page">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Endangered/Nav-Eval-2-Search-Results-I.jpg" width="1000px" 
+                        title="Navigation evaluation - search results in confusing table layout" alt="Navigation evaluation - search results in confusing table layout" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Endangered/Nav-Eval-3-Search-Results-II.jpg" width="1000px" 
+                        title="Navigation evaluation - results filtered by mammals" alt="Navigation evaluation - results filtered by mammals" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Endangered/Nav-Eval-4-Species-Profile.jpg" width="1000px" title="Navigation evaluation - species profile navigation is underdeveloped" alt="navigation evaluation - species profile navigation is underdeveloped" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Endangered/Nav-Eval-5.jpg" width="1000px" 
+                        title="Navigation evaluation - only one low quality profile image" alt="Navigation evaluation - only one low quality profile image" class="d-block w-100">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#usability-test" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#usability-test" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+            </div>
         </div>
-        <a><div class="click-image section">
-            <img src="../images/Endangered/endangered-species-prioritization-matrix.jpg" width="600px" title="findings prioritization matrix" alt="findings prioritization matrix">
-            <div class="expand-icon expand-matrix"></div>
-            <div class="image-description">
-                <p>Prioritization of the user and the agency.</p>
-                <div class="bullet-row">
-                    <div class="bullet-matrix1 active-bullet"></div>
-                    <div class="bullet-matrix2 bullet"></div>
-                    <div class="bullet-matrix3 bullet"></div>
-                    <div class="bullet-matrix4 bullet"></div>
-                    <div class="bullet-matrix5 bullet"></div>
-                    <div class="bullet-matrix6 bullet"></div>
-                </div>
-            </div>
-            <div id="matrix1" class="full-deck">
-                <div class="full-wrap">
-                <div class="overlay-center">
-                    <img src="../images/Endangered/endangered-species-prioritization-matrix.jpg" width="1000px" title="findings prioritization matrix" alt="findings prioritization matrix">
-                    <div class="shrink-icon"></div>
-                    <div class="image-description">
-                        <p>Prioritization of the user and the agency.</p>
-                        <div class="bullet-row">
-                            <div class="bullet-matrix1 active-bullet"></div>
-                            <div class="bullet-matrix2 bullet"></div>
-                            <div class="bullet-matrix3 bullet"></div>
-                            <div class="bullet-matrix4 bullet"></div>
-                            <div class="bullet-matrix5 bullet"></div>
-                            <div class="bullet-matrix6 bullet"></div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div id="matrix2" class="full-deck">
-                <div class="full-wrap">
-                <div class="overlay-center">
-                    <img src="../images/Endangered/Data-1-Home-Page.jpg" width="1000px" title="findings - home page" alt="findings - home page">
-                    <div class="shrink-icon"></div>
-                    <div class="image-description">
-                        <p>User test findings (1/5)</p>
-                        <div class="bullet-row">
-                            <div class="bullet-matrix1 bullet"></div>
-                            <div class="bullet-matrix2 active-bullet"></div>
-                            <div class="bullet-matrix3 bullet"></div>
-                            <div class="bullet-matrix4 bullet"></div>
-                            <div class="bullet-matrix5 bullet"></div>
-                            <div class="bullet-matrix6 bullet"></div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div id="matrix3" class="full-deck">
-                <div class="full-wrap">
-                <div class="overlay-center">
-                    <img src="../images/Endangered/Data-2-Search-Results-I.jpg" width="1000px" title="findings - search results 1" alt="findings - search results 1">
-                    <div class="shrink-icon"></div>
-                    <div class="image-description">
-                        <p>User test findings (2/5)</p>
-                        <div class="bullet-row">
-                            <div class="bullet-matrix1 bullet"></div>
-                            <div class="bullet-matrix2 bullet"></div>
-                            <div class="bullet-matrix3 active-bullet"></div>
-                            <div class="bullet-matrix4 bullet"></div>
-                            <div class="bullet-matrix5 bullet"></div>
-                            <div class="bullet-matrix6 bullet"></div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div id="matrix4" class="full-deck">
-                <div class="full-wrap">
-                <div class="overlay-center">
-                    <img src="../images/Endangered/Data-3-Search-Results-II.jpg" width="1000px" title="findings - search results 2" alt="findings - search results 2">
-                    <div class="shrink-icon"></div>
-                    <div class="image-description">
-                        <p>User test findings (3/5)</p>
-                        <div class="bullet-row">
-                            <div class="bullet-matrix1 bullet"></div>
-                            <div class="bullet-matrix2 bullet"></div>
-                            <div class="bullet-matrix3 bullet"></div>
-                            <div class="bullet-matrix4 active-bullet"></div>
-                            <div class="bullet-matrix5 bullet"></div>
-                            <div class="bullet-matrix6 bullet"></div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div id="matrix5" class="full-deck">
-                <div class="full-wrap">
-                <div class="overlay-center">
-                    <img src="../images/Endangered/Data-4-Species-Profile.jpg" width="1000px" title="findings - species profile" alt="findings - species profile">
-                    <div class="shrink-icon"></div>
-                    <div class="image-description">
-                        <p>User test findings (4/5)</p>
-                        <div class="bullet-row">
-                            <div class="bullet-matrix1 bullet"></div>
-                            <div class="bullet-matrix2 bullet"></div>
-                            <div class="bullet-matrix3 bullet"></div>
-                            <div class="bullet-matrix4 bullet"></div>
-                            <div class="bullet-matrix5 active-bullet"></div>
-                            <div class="bullet-matrix6 bullet"></div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div id="matrix6" class="full-deck">
-                <div class="full-wrap">
-                <div class="overlay-center">
-                    <img src="../images/Endangered/Data-5-Full -resolution-Image.jpg" width="1000px" title="findings - species profile" alt="findings - species profile">
-                    <div class="shrink-icon"></div>
-                    <div class="image-description">
-                        <p>User test findings (5/5)</p>
-                        <div class="bullet-row">
-                            <div class="bullet-matrix1 bullet"></div>
-                            <div class="bullet-matrix2 bullet"></div>
-                            <div class="bullet-matrix3 bullet"></div>
-                            <div class="bullet-matrix4 bullet"></div>
-                            <div class="bullet-matrix5 bullet"></div>
-                            <div class="bullet-matrix6 active-bullet"></div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div></a>
-    </section>
-</div>
+    </div>
+</section>
 <!-- =======================================
 Problem statement
 ======================================= -->
-<div class="case-p-body problem-statement section">
-    <p class="problem bold state">How might we help redesign the website so that users can
-        successfully search for species in their area through navigation or search
-        and able to save visual information for later use?</p>
-    <div class="quotation-start"></div>
-    <div class="quotation-end"></div>
-</div>
-
+<section class="d-grid container-fluid case-p-body problem-statement section">
+    <div class="row p-0 justify-content-center p-0">
+        <div class="col-7 p-0 position-relative problem-text">
+            <p class="problem bold state m-0">How might we help redesign the website so that users can
+            successfully search for species in their area through navigation or search
+            and able to save visual information for later use?</p>
+            <div class="quotation-start"></div>
+            <div class="quotation-end"></div>
+        </div>
+    </div>
+</section>
 <!-- =======================================
 Definition & Ideation
 ======================================= -->
-<div class="case-p-body section" id="definition-body">
-    <section class="case-p-section">
-        <div class="case-p"><h2>Definition & Ideation</h2>
-        <p>We identified a user flow for <span class="bold">how Michael would use the current website
-        </span> and conducted heuristic evaluation for the key features he'd interact with to achieve his goal 
-        (use the slide deck to see heuristic evaluation for each page).
-        </p></div>
-        <a><div class="click-image">
-            <img class ="site-map-snip" src="../images/Endangered/endangered-species-site-map-current-snip.jpg" title="current site map" alt="current site map">
-            <div class="expand-icon expand-map"></div>
-            <div class="image-description">
-                <p>What the current site map looks like.</p>
-                <div class="bullet-row">
-                    <div class="bullet-map1 active-bullet"></div>
-                    <div class="bullet-map2 bullet"></div>
+<section class="d-grid container-fluid case-p-body case-p-body section" id="definition-body">
+    <div class="row p-0 justify-content-center p-0 case-p-section">
+        <div class="col-6 p-0 case-p">
+            <h2>Definition & Ideation</h2>
+            <p>We identified a user flow for <span class="bold">how Michael would use the current website
+            </span> and conducted heuristic evaluation for the key features he'd interact with to achieve his goal 
+            (use the slide deck to see heuristic evaluation for each page).
+            </p>
+            <div id="site-map" class="carousel slide carousel-fade" data-bs-touch="true" data-interval="false">
+                <div class="image-description">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#site-map" data-bs-slide-to="0" class="bullet active"></li>
+                        <li data-bs-target="#site-map" data-bs-slide-to="1" class="bullet"></li>
+                    </ol>
                 </div>
-            </div>
-            <div id="map1" class="full-deck">
-                <div class="full-wrap">
-                <div class="overlay-center">
-                    <img src="../images/Endangered/endangered-species-site-map-current-snip.jpg" width="1000px" title="findings prioritization matrix" alt="findings prioritization matrix">
-                    <div class="shrink-icon"></div>
-                    <div class="image-description">
-                        <p>What the current site map looks like.</p>
-                        <div class="bullet-row">
-                            <div class="bullet-map1 active-bullet"></div>
-                            <div class="bullet-map2 bullet"></div>
-                        </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/Endangered/endangered-species-site-map-current-snip.jpg" width="1000px" 
+                        title="Card sorting - laying out the current site map with several duplicates" alt="Card sorting - laying out the current site map with several duplicates" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Endangered/endangered-species-site-map-current.jpg" width="1000px" 
+                        title="Card sorting - our near final take on the new site map" alt="Card sorting - our near final take on the new site map" class="d-block w-100">
                     </div>
                 </div>
-                </div>
+                <a class="carousel-control-prev" href="#site-map" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#site-map" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
             </div>
-            <div id="map2" class="full-deck">
-                <div class="full-wrap">
-                <div class="overlay-center">
-                    <img src="../images/Endangered/endangered-species-site-map-current.jpg" width="1000px" title="findings prioritization matrix" alt="findings prioritization matrix">
-                    <div class="shrink-icon"></div>
-                    <div class="image-description">
-                        <p>The sorting led us to remove duplicates, combine & even rename some cards for clarity.</p>
-                        <div class="bullet-row">
-                            <div class="bullet-map1 bullet"></div>
-                            <div class="bullet-map2 active-bullet"></div>
-                        </div>
-                    </div>
-                </div>
-                </div>
+        </div>
+    </div>
+</section>
+<section class="d-grid container-fluid case-p-body case-p-body" style="margin-bottom: 80px">
+    <div class="row p-0 justify-content-center p-0 case-p-section">
+        <div class="col-6 p-0 case-p section"><p>This “journey” for the most part lies in the 3 following categories out of 7:
+            <ul class=".ulist">
+                <li>Species Search;</li>
+                <li>Endangered Species Bulletin;</li>
+                <li>Conservation Process.</li>
+            </ul></p>
+            <a href="#sitemap"><div class="click-image">
+                <img src="../images/Endangered/endangered-species-site-map.png" width="1000px" height="400px" 
+                title="New site map" alt="New site map" style="object-fit: cover">
+                <div class="expand-icon"></div>
+            </div></a>
+        </div>
+    </div>
+    <a href="#_" id="sitemap" class="position-fixed image-overlay">
+        <div class="d-flex overlay-wrap justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center position-relative image-modal">
+                <img src="../images/Endangered/endangered-species-site-map.png" width="1000px" 
+                title="New site map" alt="New site map">
+                <div class="shrink-icon"></div>
             </div>
-        </div></a>
-    </section>
-</div>
-<div class="case-p-body section">
-    <section class="case-p-section">
-        <div class="case-p"><p>This “journey” for the most part lies in the 3 following categories out of 7:
-        <ul class=".ulist">
-            <li>Species Search;</li>
-            <li>Endangered Species Bulletin;</li>
-            <li>Conservation Process.</li>
-        </ul></p></div>
-        <a href="#sitemap"><div class="click-image">
-            <img src="../images/Endangered/endangered-species-site-map.png" width="600px" title="new site map" alt="new site map">
-            <div class="expand-icon"></div>
-        </div></a>
-        <a href="#_" id="sitemap" class="click-overlay"><div>
-            <img src="../images/Endangered/endangered-species-site-map.png" width="600px" title="new site map" alt="new site map">
-            <div class="shrink-icon"></div>
-        </div></a>
-    </section>
-</div>
+        </div> 
+    </a>
+</section>
 
 <!-- =======================================
 Prototyping & Testing
 ======================================= -->
-<div class="case-p-body section" id="prototyping-body">
-    <section class="case-p-section">
-        <div class="case-p"><h2>Prototyping & Testing</h2>
+<section class="d-grid container-fluid case-p-body case-p-body section" id="prototyping-body">
+    <div class="row p-0 justify-content-center p-0 case-p-section">
+        <div class="col-6 p-0 case-p">
+            <h2>Prototyping & Testing</h2>
             <p>Adaptive design required <span class="bold">desktop</span> and 
-                <span class="bold">mobile</span> view tests. 
-                <br>
-                UI style guide was used for the 5-second test to see how well 
+                <span class="bold">mobile</span> view tests. UI style guide was used for the 5-second test to see how well 
                 the direction of the redesign fits with the agency and users’ perception of it.
                 <br>
                 The lo-fi prototypes envisioned a scientific, data-driven feel. 
                 However, I looked back on <span class="bold">nature-related</span> website designs 
                 and got inspired by the <span class="bold">park rangers' uniforms</span> for the UI style guide.
             </p>
-        </div>
-        <a><div class="click-image">
-                <img class="UI-style-img" src="../images/Endangered/endangered-species-ui-style-tile.png" 
-                width="600px" title="new UI style tile" alt="new UI style tile">
-                <div class="expand-icon expand-style"></div>
+            <div id="UI-style" class="carousel slide carousel-fade" data-bs-touch="true" data-interval="false">
                 <div class="image-description">
-                    <p>UI style tile</p>
-                    <div class="bullet-row">
-                        <div class="bullet-style1 active-bullet"></div>
-                        <div class="bullet-style2 bullet"></div>
-                        <div class="bullet-style3 bullet"></div>
-                        <div class="bullet-style4 bullet"></div>
-                        <div class="bullet-style5 bullet"></div>
-                        <div class="bullet-style6 bullet"></div>
-                        <div class="bullet-style7 bullet"></div>
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#UI-style" data-bs-slide-to="0" class="bullet active"></li>
+                        <li data-bs-target="#UI-style" data-bs-slide-to="1" class="bullet"></li>
+                        <li data-bs-target="#UI-style" data-bs-slide-to="2" class="bullet"></li>
+                        <li data-bs-target="#UI-style" data-bs-slide-to="3" class="bullet"></li>
+                        <li data-bs-target="#UI-style" data-bs-slide-to="4" class="bullet"></li>
+                        <li data-bs-target="#UI-style" data-bs-slide-to="5" class="bullet"></li>
+                    </ol>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/Endangered/endangered-species-ui-style-tile.png" width="1000px" 
+                        title="New UI style tile" alt="New UI style tile" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Endangered/ui-style-colours.png" width="1000px" 
+                        title="Colours & typography" alt="Colours & typography" class="colours-typography d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Endangered/ui-style-buttons.png" width="1000px" 
+                        title="Buttons & tabs" alt="Buttons & Tabs" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Endangered/ui-style-input.png" width="1000px" 
+                        title="Input UI styles" alt="Input UI styles" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Endangered/ui-style-icons.png" width="1000px" 
+                        title="Icons" alt="Icons" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/Endangered/ui-style-spacing.png" width="1000px" 
+                        title="Spacing principles" alt="Spacing principles" class="d-block w-100">
                     </div>
                 </div>
-                <div id="style1" class="full-deck">
-                    <div class="full-wrap">
-                    <div class="overlay-center">
-                        <img src="../images/Endangered/endangered-species-ui-style-tile.png" width="1000px" title="new UI style tile" alt="new UI style tile">
-                        <div class="shrink-icon"></div>
-                        <div class="image-description">
-                            <p>UI style tile</p>
-                            <div class="bullet-row">
-                                <div class="bullet-style1 active-bullet"></div>
-                                <div class="bullet-style2 bullet"></div>
-                                <div class="bullet-style3 bullet"></div>
-                                <div class="bullet-style4 bullet"></div>
-                                <div class="bullet-style5 bullet"></div>
-                                <div class="bullet-style6 bullet"></div>
-                                <div class="bullet-style7 bullet"></div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div id="style2" class="full-deck">
-                    <div class="full-wrap">
-                    <div class="overlay-center">
-                        <img class="colours-img" src="../images/Endangered/Style Guide.png" width="1000px" title="colours & typography" alt="colours & typography">
-                        <div class="shrink-icon"></div>
-                        <div class="image-description">
-                            <p>National rangers inspiration and colour. Bold, all ages appropriate typography,</p>
-                            <div class="bullet-row">
-                                <div class="bullet-style1 bullet"></div>
-                                <div class="bullet-style2 active-bullet"></div>
-                                <div class="bullet-style3 bullet"></div>
-                                <div class="bullet-style4 bullet"></div>
-                                <div class="bullet-style5 bullet"></div>
-                                <div class="bullet-style6 bullet"></div>
-                                <div class="bullet-style7 bullet"></div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div id="style3" class="full-deck">
-                    <div class="full-wrap">
-                    <div class="overlay-center">
-                        <img class="buttons-img" src="../images/Endangered/Style Guide.png" width="1000px" title="buttons & tabs" alt="Buttons & Tabs">
-                        <div class="shrink-icon"></div>
-                        <div class="image-description">
-                            <p>Button state changes are kept subtle. The header spacing adhers to multiples of 20px.</p>
-                            <div class="bullet-row">
-                                <div class="bullet-style1 bullet"></div>
-                                <div class="bullet-style2 bullet"></div>
-                                <div class="bullet-style3 active-bullet"></div>
-                                <div class="bullet-style4 bullet"></div>
-                                <div class="bullet-style5 bullet"></div>
-                                <div class="bullet-style6 bullet"></div>
-                                <div class="bullet-style7 bullet"></div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div id="style4" class="full-deck">
-                    <div class="full-wrap">
-                    <div class="overlay-center">
-                        <img class="input-img" src="../images/Endangered/Style Guide.png" width="1000px" title="input UI styles" alt="input UI styles">
-                        <div class="shrink-icon"></div>
-                        <div class="image-description">
-                            <p>Any user interaction is highlighted with the secondary red so it shows on all backgrounds.</p>
-                            <div class="bullet-row">
-                                <div class="bullet-style1 bullet"></div>
-                                <div class="bullet-style2 bullet"></div>
-                                <div class="bullet-style3 bullet"></div>
-                                <div class="bullet-style4 active-bullet"></div>
-                                <div class="bullet-style5 bullet"></div>
-                                <div class="bullet-style6 bullet"></div>
-                                <div class="bullet-style7 bullet"></div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div id="style5" class="full-deck">
-                    <div class="full-wrap">
-                    <div class="overlay-center">
-                        <img class="icons-img" src="../images/Endangered/Style Guide.png" width="1000px" title="icons" alt="icons">
-                        <div class="shrink-icon"></div>
-                        <div class="image-description">
-                            <p>Solid dark icons give a clear, easy-to-identify iconography.</p>
-                            <div class="bullet-row">
-                                <div class="bullet-style1 bullet"></div>
-                                <div class="bullet-style2 bullet"></div>
-                                <div class="bullet-style3 bullet"></div>
-                                <div class="bullet-style4 bullet"></div>
-                                <div class="bullet-style5 active-bullet"></div>
-                                <div class="bullet-style6 bullet"></div>
-                                <div class="bullet-style7 bullet"></div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div id="style6" class="full-deck">
-                    <div class="full-wrap">
-                    <div class="overlay-center">
-                        <img class="spacing-img" src="../images/Endangered/Style Guide.png" width="1000px" title="spacing in multiples of 20px" alt="spacing in multiples of 20px">
-                        <div class="shrink-icon"></div>
-                        <div class="image-description">
-                            <p>Spacing is aligned to multiples of 20px.</p>
-                            <div class="bullet-row">
-                                <div class="bullet-style1 bullet"></div>
-                                <div class="bullet-style2 bullet"></div>
-                                <div class="bullet-style3 bullet"></div>
-                                <div class="bullet-style4 bullet"></div>
-                                <div class="bullet-style5 bullet"></div>
-                                <div class="bullet-style6 active-bullet"></div>
-                                <div class="bullet-style7 bullet"></div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div id="style7" class="full-deck">
-                    <div class="full-wrap">
-                    <div class="overlay-center">
-                        <img class="imagery-img" src="../images/Endangered/Imagery.png" width="1000px" title="site imagery examples" alt="site imagery examples">
-                        <div class="shrink-icon"></div>
-                        <div class="image-description">
-                            <p>Imagery is warm and welcoming with as much focus on the endangered species as possible.</p>
-                            <div class="bullet-row">
-                                <div class="bullet-style1 bullet"></div>
-                                <div class="bullet-style2 bullet"></div>
-                                <div class="bullet-style3 bullet"></div>
-                                <div class="bullet-style4 bullet"></div>
-                                <div class="bullet-style5 bullet"></div>
-                                <div class="bullet-style6 bullet"></div>
-                                <div class="bullet-style7 active-bullet"></div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
+                <a class="carousel-control-prev" href="#UI-style" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#UI-style" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
             </div>
-        </a>
-    </section>
-</div>
+        </div>
+    </div>
+</section>
 <!-- Prototyping : Navigation changes -->
-<div class="case-p-body section">
-    <section class="case-p-section">
-        <div class="case-p"><h2>Navigation Changes</h2>
-            <p>Research shows that the navigation requires a more cohesive, intuitive layout:
-                <ol>
-                    <li>The header is significantly reduced in height to focus on the page content. 
-                        Breadcrumbs are now included.</li>
-                    <li>Based on previous UI research, a single search bar is favoured throughout 
-                        (<a class="hyperlink" href="https://www.beacontechnologies.com/blog/2010/09/multiple-search-boxes.aspx" target="_blank">Beacon News</a>, 2010). 
-                        Michael can refine his search results after a search is made. All search suggestions appear during his keyword input for a quicker search.</li>
-                    <li>The redundant site map is removed from the footer to <span class="bold">focus on relevant information</span> 
-                        (Contact Us) and links to statements required by law.</li>
-                </ol>
-            </p>
+<section class="d-grid container-fluid case-p-body case-p-body section">
+    <div class="row p-0 justify-content-center p-0 case-p-section">
+        <div class="col-6 p-0 case-p">
+            <h2>Navigation Changes</h2>
+            <p>Research shows that the navigation requires a more cohesive, intuitive layout:</p>
+            <ol class="olist">
+                <li>The header is significantly reduced in height to focus on the page content. 
+                    Breadcrumbs are now included.</li>
+                <div class="gif beta-header">
+                    <img src="../images/Endangered/UI Interactions/desktop beta header.gif" width="1000px" 
+                    title="beta header UI" alt="beat header UI">
+                </div>
+                <li>Based on previous UI research, a single search bar is favoured throughout 
+                    (<a class="hyperlink" href="https://www.beacontechnologies.com/blog/2010/09/multiple-search-boxes.aspx" target="_blank">Beacon News</a>, 2010). 
+                    Michael can refine his search results after a search is made. All search suggestions appear during his keyword input for a quicker search.</li>
+                <li>The redundant site map is removed from the footer to <span class="bold">focus on relevant information</span> 
+                    (Contact Us) and links to statements required by law.</li>
+                <div class="gif beta-header">
+                    <img src="../images/Endangered/UI Interactions/beta footer.png" width="1000px" 
+                    title="beta header UI" alt="beat header UI">
+                </div>
+            </ol>
         </div>
-        <div class="image-column">
-            <a><div class="gif beta-header">
-            <img src="../images/Endangered/UI Interactions/desktop beta header.gif" width="600px" title="beta header UI" alt="beat header UI">
-            </div></a>
-            <a><div class="static-image ">
-                <img src="../images/Endangered/UI Interactions/beta footer.png" width="600px" title="beta footer" alt="beat footer">
-            </div></a>
-        </div>
-    </section>
-</div>
+    </div>
+</section>
 <!-- Prototyping : Homepage Test -->
-<div class="case-p-body section">
-    <section class="case-p-section">
-        <div class="case-p">
+<section class="d-grid container-fluid case-p-body case-p-body">
+    <div class="row p-0 justify-content-center p-0 case-p-section">
+        <div class="col-6 p-0 case-p section">
             <h2>Homepage Test</h2>
             <p>5-second tests were conducted for the homepage of the stylized prototype. 
                 The findings from 3 user tests <span class="bold">validate</span> the proposed UI design in the following ways:
-                <ol>
+                <ol class="olist">
                     <li>The color palette successfully reflects the <span class="bold">"nature"</span>, 
                         <span class="bold">"earth"</span>, <span class="bold">"animals"</span> that users associate with the agency.</li>
                     <li>Clear layout, information hierarchy & navigation.</li>
@@ -752,127 +487,167 @@ Prototyping & Testing
                         <span class="bold">"Wildlife"</span>, <span class="bold">"News"</span>.</li>
                 </ol>
             </p>
+            <a href="#homepage-test"><div class="click-image">
+                <img src="../images/Endangered/endangered-species-homepage-test.png" width="1000px" 
+                title="proto persona: Michael McKinley" alt="proto persona Michael McKinley" class="w-100">
+                <div class="expand-icon"></div>
+            </div></a>
         </div>
-        <a href="#homepage-test"><div class="click-image">
-            <img src="../images/Endangered/endangered-species-homepage-test.png" 
-            width="600px" title="proto persona: Michael McKinley" alt="proto persona Michael McKinley">
-            <div class="expand-icon"></div>
-        </div></a>
-        <a href="#_" id="homepage-test" class="click-overlay"><div>
-            <img src="../images/Endangered/endangered-species-homepage-test.png" 
-            width="600px" title="proto persona: Michael McKinley" alt="proto persona Michael McKinley">
-            <div class="shrink-icon"></div>
-        </div></a>
-    </section>
-</div>
+        <a href="#_" id="homepage-test" class="image-overlay position-fixed">
+            <div class="d-flex overlay-wrap justify-content-center align-items-center">
+                <img src="../images/Endangered/endangered-species-homepage-test.png" 
+                width="1000px" title="proto persona: Michael McKinley" alt="proto persona Michael McKinley">
+                <div class="shrink-icon"></div>
+            </div>
+        </a>
+    </div>
+</section>
 <!-- Prototyping : Changes to UI -->
-<div class="case-p-body section">
-    <section class="case-p-section">
-        <div class="case-p"><h2>Changes to UI</h2>
+<section class="d-grid container-fluid case-p-body case-p-body">
+    <div class="row p-0 justify-content-center p-0 case-p-section">
+        <div class="col-6 p-0 case-p" >
+            <h2>Changes to UI</h2>
             <p>The findings led to small but impactful adjustments for a better experience:
-                <ul class=".ulist">
-                    <li>The <span class="bold">spacing</span> in the header navigation tabs and article cards was fixed for better alignment.
-                    <li>The pictures occupy more space to give the <span class="bold">visual focus</span>.
-                    <li><span class="bold">3 key calls to action</span> and home are kept on desktop & tablet view. 
-                        All other tabs are hidden in the hamburger menu.</li>
-                    <li>The footer is reduced in height to make the external links more visible and reduce scrolling.</li>
-                    <li>The external links are <span class="bold">colour corrected</span> for greater accessibility.</li>
-                    <li>Incorporation of <span class="bold">mobile UI elements on the home page</span>, including breadcrumb removal, 
-                        screen-wide hero image carousel on the home page.</li>
+                <ul>
+                    <li>
+                        The <span class="bold">spacing</span> in the header navigation tabs and article cards was fixed for better alignment.
+                    </li>
+                    <li>
+                        The pictures occupy more space to give the <span class="bold">visual focus</span>.
+                    </li>
+                    <li>
+                        The external links are <span class="bold">colour corrected</span> for greater accessibility.
+                    </li>
+                    <li>
+                        Incorporation of <span class="bold">mobile UI elements on the home page</span>, including breadcrumb removal, 
+                        screen-wide hero image carousel on the home page.
+                    </li>
+                    <a><div class="gif homepage-UI">
+                        <img src="../images/Endangered/UI Interactions/hero change.gif" 
+                        width="1000px" title="more mobile UI elements" alt="homepage has more mobile UI elements">
+                    </div></a>
+                    <li>
+                        <span class="bold">3 key calls to action</span> and home are kept on desktop & tablet view. 
+                        All other tabs are hidden in the hamburger menu.
+                    </li>
+                    <a>
+                        <div class="gif">
+                            <img src="../images/Endangered/UI Interactions/header change.gif" 
+                            width="1000px" title="focus on calls to action" alt="header has focus on calls to action">
+                        </div>
+                    </a>
+                    <li>
+                        The footer is reduced in height to make the external links more visible and reduce scrolling.
+                    </li>
+                    <a>
+                        <div class="gif colour-footer">
+                            <img src="../images/Endangered/UI Interactions/footer change.gif" 
+                            width="1000px" title="colour corrected footer" alt="colour corrected footer">
+                        </div>
+                    </a>
                 </ul>
             </p>
         </div>
-        <div class="image-column">
-            <a><div class="gif">
-                <img src="../images/Endangered/UI Interactions/header change.gif" 
-                width="600px" title="focus on calls to action" alt="header has focus on calls to action">
-            </div></a>
-            <a><div class="gif colour-footer">
-                <img src="../images/Endangered/UI Interactions/footer change.gif" 
-                width="600px" title="colour corrected footer" alt="colour corrected footer">
-            </div></a>
-            <a><div class="gif homepage-UI">
-                <img src="../images/Endangered/UI Interactions/hero change.gif" 
-                width="600px" title="more mobile UI elements" alt="homepage has more mobile UI elements">
-            </div></a>
-        </div>
-    </section>
-</div>
+    </div>
+</section>
 <!-- Prototyping : Mobile Usability -->
-<div class="case-p-body section">
-    <section class="case-p-section">
-        <div class="case-p">
+<section class="d-grid container-fluid case-p-body case-p-body section">
+    <div class="row p-0 justify-content-center p-0 case-p-section">
+        <div class="col-6 p-0 case-p">
             <h2>Mobile Usability</h2>
             <p>Our task was to produce adaptive redesign (desktop > mobile). 
                 We found that to achieve this, you still need to reiterate desktop to 
                 better reflect mobile view. As a result further changes took place:
-                <ol>
-                    <li>Static secondary navigation is replaced with a hamburger button to <span class="bold">prioritize content</span> 
+                <ol class="olist">
+                    <li>
+                        Static secondary navigation is replaced with a hamburger button to <span class="bold">prioritize content</span> 
                         on an individual page and keep the UI <span class="bold">consistent across devices</span>. 
-                        A written prompt is given to discover the hamburger menu on search profile pages.</li>
-                    <li>The hamburger icon and the 4 tabs are <span class="bold">combined</span> when the width 
-                        is smaller than tablet view (use the slide deck to see the snap points).</li>
-                    <li>The breadcrumbs are reduced to the previous and current level of the site map to fit the mobile screen.</li>
+                        A written prompt is given to discover the hamburger menu on search profile pages.
+                    </li>
+                    <a>
+                        <div class="gif navigation-levels">
+                            <img src="../images/Endangered/UI Interactions/desktop secondary to primary navigation.gif" 
+                            width="1000px" title="secondary to primary navigation" alt="secondary to primary navigation">
+                        </div>
+                    </a>
+                    <li>
+                        The hamburger icon and the 4 tabs are <span class="bold">combined</span> when the width 
+                        is smaller than tablet view (use the slide deck to see the snap points).
+                    </li>
+                    <li>
+                        The breadcrumbs are reduced to the previous and current level of the site map to fit the mobile screen.
+                    </li>
+                    <a>
+                        <div class="gif responsive-screens">
+                            <img src="../images/Endangered/UI Interactions/responsive design change.gif" 
+                            width="1000px" title="responsive design" alt="responsive design (desktop/mobile/tablet)">
+                        </div>
+                    </a>
                 </ol>
             </p>
         </div>
-        <div class="image-column">
-            <a><div class="gif navigation-levels">
-                <img src="../images/Endangered/UI Interactions/desktop secondary to primary navigation.gif" 
-                width="600px" title="secondary to primary navigation" alt="secondary to primary navigation">
-                </div></a>
-            <a><div class="gif responsive-screens">
-                <img src="../images/Endangered/UI Interactions/responsive design change.gif" 
-                width="600px" title="responsive design" alt="responsive design (desktop/mobile/tablet)">
-                </div></a>
-        </div>
-    </section>
-</div>
+    </div>
+</section>
 <!-- Prototyping : Mobile Tests -->
-<div class="case-p-body section">
-    <section class="case-p-section">
-        <div class="case-p"><h2>Mobile Tests</h2>
-        <p>Based on Michael’s user path to search local endangered species in his area, 
+<section class="d-grid container-fluid case-p-body">
+    <div class="row p-0 justify-content-center p-0 case-p-section">
+        <div class="col-6 p-0 case-p section">
+            <h2>Mobile Tests</h2>
+            <p>Based on Michael’s user path to search local endangered species in his area, 
             5 user tests were conducted on the mobile version. It was important to see 
             <span class="bold">how well the navigation worked in mobile view</span>.
+            </p>
+            <a href="#KPIs">
+                <div class="click-image" style="height: auto">
+                    <img src="../images/Endangered/KPIs.svg" width="1000px" 
+                    title="key performance indicators" alt="key performance indicators" class="w-100">
+                    <div class="expand-icon"></div>
+                </div>
+            </a>
             <br>
-            The performance indicators show that mobile prototype 1 required work in
-        </p></div>
-        <a href="#KPIs"><div class="statistics click-image">
-        <img class="KPIs" src="../images/Endangered/KPIs.svg" 
-        width="600px" title="key performance indicators" alt="key performance indicators">   
-    </div></a>
-        <a href="#_" ><div id="KPIs" class="click-overlay">
-            <img class="KPIs-img" src="../images/Endangered/KPIs.svg" 
-            width="600px" title="key performance indicators" alt="key performance indicators">
-        </div></a>
-    </section>
-</div>
-<div class="x-ol-body section">
-    <section class="x-ol-list">
-        <ol class="x-ol">
-            <li class="x1">
-                <div>Information hierarchy in search results.
-                <!-- <br><br><br> -->
-                <img class="imgx" src="../images/Endangered/UI Interactions/work on search results IA.png"
-                width="300px" title="search results need hierarchy" alt="search results need hierarchy">
+            <p>The performance indicators show that mobile prototype 1 required work in
+            </p>
+        </div>
+        <a href="#_" id="KPIs" class="image-overlay position-fixed">
+            <div class="d-flex overlay-wrap justify-content-center align-items-center">
+                <div style="position: relative">
+                    <img src="../images/Endangered/KPIs.svg" width="1000px" 
+                    title="proto persona: Michael McKinley" alt="proto persona Michael McKinley">
+                    <div class="shrink-icon"></div>
                 </div>
-            </li>
-            <li class="x2">
-                <div>Easy to access home button outside of the hamburger menu.
-                <!-- <br><br> -->
-                <img class="imgx" src="../images/Endangered/UI Interactions/work on home button and image hotspot.png"
-                width="300px" title="home button access" alt="home button access">
-                </div>
-            </li>
-            <li class="x3">
-                <div>Bigger full view image hotspot and relevance to the species.
-                <img class="imgx" src="../images/Endangered/UI Interactions/work on home button and image hotspot.png"
-                width="300px" title="bigger image hotspot" alt="bigger image hotspot">
-                </div>
-            </li>
+            </div>
+        </a>
+    </div>
+</section>
+<section class="d-grid container-fluid x-ol-body" style="margin-bottom: 80px">
+    <div class="row p-0 justify-content-center p-0 case-p-section">
+        <ol class="col-6 p-0 x-ol d-grid section olist">
+            <div class="row">
+                <li class="col-4 x1">
+                    <div style="margin-right: 20px">
+                        Information hierarchy in search results.
+                        <img class="imgx" src="../images/Endangered/UI Interactions/work on search results IA.png"
+                        width="300px" title="search results need hierarchy" alt="search results need hierarchy">
+                    </div>
+                </li>
+                <li class="col-4 x2">
+                    <div style="margin-right: 20px">
+                        Easy to access home button outside of the hamburger menu.
+                        <img class="imgx" src="../images/Endangered/UI Interactions/work on home button and image hotspot.png"
+                        width="300px" title="home button access" alt="home button access">
+                    </div>
+                </li>
+                <li class="col-4 x3">
+                    <div style="margin-right: 20px">
+                        Bigger full view image hotspot and relevance to the species.
+                        <img class="imgx" src="../images/Endangered/UI Interactions/work on home button and image hotspot.png"
+                        width="300px" title="bigger image hotspot" alt="bigger image hotspot">
+                    </div>
+                </li>
+            </div>
         </ol>
-</div>
+    </div>
+</section>
 <!-- =======================================
 Final product
 ======================================= -->
@@ -948,65 +723,70 @@ Final product
 <!-- =======================================
 Reflection
 ======================================= -->
-<div class="summary-body section" id="reflection-body">
-    <section class="summary">
-        <div class="over-column1">
-            <h2>Reflection</h2>
-            <p>The <span class="bold">UI direction</span> and <span class="bold">style guide</span> 
-                that aligns with a “brand”, or, in this case, a government agency, were key to bringing the design together into a 
-                <span class="bold">cohesive user experience</span>.
-            <br>
-            Adaptive, or desktop-first, design had its benefits of <span class="bold">greater creativity in navigation</span>. 
-            However, the on-going process of prototyping & testing reveal a <span class="bold">mutual dependence of desktop and mobile views</span>.
-            </p>
+<div id="reflection-body" class="d-grid container-fluid summary-body section">
+    <div class="row justify-content-center">
+        <div class="col-8 summary">
+            <div class="over-column1">
+                <h2>Reflection</h2>
+                <p>The <span class="bold">UI direction</span> and <span class="bold">style guide</span> 
+                    that aligns with a “brand”, or, in this case, a government agency, were key to bringing the design together into a 
+                    <span class="bold">cohesive user experience</span>.
+                <br>
+                Adaptive, or desktop-first, design had its benefits of <span class="bold">greater creativity in navigation</span>. 
+                However, the on-going process of prototyping & testing reveal a <span class="bold">mutual dependence of desktop and mobile views</span>.
+                </p>
+            </div>
+            <div class="over-column2">
+                <h2>Next Steps</h2>
+                <ul class=".ulist">
+                    <li>A-B testing for the inclusion and layout of <span class="bold">filter items</span>;</li>
+                    <li>A <span class="bold">landowners' portal</span> for all the easy-to-find and -use tools in the Resources tab.</li>
+                </ul>
+            </div>
         </div>
-        <div class="over-column2">
-            <h2>Next Steps</h2>
-            <ul class=".ulist">
-                <li>A-B testing for the inclusion and layout of <span class="bold">filter items</span>;</li>
-                <li>A <span class="bold">landowners' portal</span> for all the easy-to-find and -use tools in the Resources tab.</li>
-            </ul>
-        </div>
-    </section>
+    </div>
 </div>
 
 <!-- =======================================
 See other studies
 ======================================= -->
-<div class="other-studies-body section">
-    <section class="other-studies case-p-section">
+<section class="other-studies-body section">
+    <div class="other-studies case-p-section">
         <div class="other-studies-h2">
             <h2>See Other Studies</h2>
         </div>
         <div id= "other-study1" class="narrow-card">
-            <div id="card-thumbnail2" class="ncard-thumbnail"></div>
             <div class="narrow-card-content">
+                <div id="card-thumbnail2" class="ncard-thumbnail"></div>
                 <h2 class="card-heading">e<span class="italic">motion</span> Mood Tracker App</h2>
                 <p class="card-date">Aug 2020 (3 weeks)</p>
-                <p class="card-description">UX Case Study for minimal input mood tracking and suggestions generator based on selected mood.</p>
-                <div class="button narrow-button" id="see-more">see more</div>
+                <p class="card-description">
+                    UX Case Study for minimal input mood tracking and suggestions generator based on selected mood.
+                </p>
             </div>
+            <div class="button narrow-button" id="see-more">see more</div>
         </div>
         <div id= "other-study2" class="narrow-card">
-            <div id="card-thumbnail3" class="ncard-thumbnail"></div>
             <div class="narrow-card-content">
+                <div id="card-thumbnail3" class="ncard-thumbnail"></div>
                 <h2 class="card-heading">CORAL NPO Redesign</h2>
                 <p class="card-date">Oct 2020 (3 weeks)</p>
-                <p class="card-description">UX Case Study for donating, volunteering with and learning ways to live sustainably for a coral saving organization.</p>
-                <div class="button narrow-button" id="see-more">see more</div>
+                <p class="card-description">
+                    UX Case Study for donating, volunteering with and learning ways to live sustainably for a coral saving organization.
+                </p>
             </div>
-    </section>
-</div>
+            <div class="button narrow-button" id="see-more">see more</div>
+        </div>
+    </div>
+</section>
 
 <!-- =======================================
 Footer
 ======================================= -->
-<footer class="section">
+<footer class="container-fluid section">
     <div class="footer-content">
         <h2 id="footer-header">Let's work on solutions together!</h2>
-        <!-- <p>+1 (657) 252 2544</p> -->
         <div class='contact'>
-            <!-- <div class="contact-method"><p>+1 (657) 252 2544</p></div> -->
             <a href="tel:6572522544">
                 <div class='contact-phone'>
                     <img src='../icons/ph_phone-call-light.svg' title="mobile: +1 (657) 252-2544" sizes='32px 32px'>
@@ -1023,16 +803,15 @@ Footer
                 <div class='contact-dribbble'>
                 <img src='../icons/et_dribbble.svg' alt="dribbble" sizes='32px 32px'>
             </div></a>
-            <!-- <a href="https://www.instagram.com/teri_akimoto.art/"><div class='contact-instagram'><img src='icons/et-openmoji_instagram.svg' alt="instagram" title="Instagram: teri_akimoto.art" sizes='32px 32px'></div></a> -->
         </div>
         <p>© Hoang Lan Nguyen 2020</p>
     </div>
 </footer>
-</body>
 <!-- =======================================
 Javascript
 ======================================= -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 <script src="../JavaScript/Endangered-Species.js"></script>
 <script>
     var menu = document.getElementById("menu");
@@ -1044,6 +823,6 @@ Javascript
       menu.style.top = "-200vh";
     }
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
 
 </html>
