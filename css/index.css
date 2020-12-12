@@ -1241,7 +1241,7 @@ section {
 /* ------------------------------ */
 /* Responsive Breakpoints */
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1200px) {
 .wide-card {
     grid-template-columns: repeat(12, 1fr);
 }
@@ -1263,7 +1263,7 @@ section {
 }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
 .logo {
     display: none;
     float: left;
@@ -1292,7 +1292,7 @@ section {
 }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
 /* Case Study Layout */
 .x-ol-body, .case-p-body, .double-p-body, .final-p-section, .final-p-section-mirror, .summary {
     padding-top: 40px !important;
