@@ -28,7 +28,7 @@ html {
     height: 1500px;
 }
 #Home-bg {
-    background-image: url(../images/annie-spratt-hero-image.jpg);
+    background-image: url(../images/annie-spratt-hero-image-small.jpg);
 }
 #About-bg {
     background-color: #ffffff;
@@ -37,6 +37,7 @@ body {
     padding: 0;
     margin: 0;
     height: 1500px;
+    background-color: transparent;
     }
 .section {
     opacity: 0;
@@ -322,7 +323,7 @@ HOME PAGE
     background-image: url(../images/eMotion/emotion-cover.png);
 }
 #card-thumbnail3 {
-    background-image: url(../images/Coral/CORAL-all-devices-cover.png);
+    background-image: url(../images/CORAL/CORAL-all-devices-cover.png);
 }
 .card-heading {
     margin-bottom: 0;
@@ -794,7 +795,6 @@ CASE STUDY 1/2/3
 
 /* CASE STUDY 1/2/3 : Main body layouts */
 section {
-    overflow-x: hidden;
     width: 100%;
 }
 .x-ol-body, .case-p-body {
