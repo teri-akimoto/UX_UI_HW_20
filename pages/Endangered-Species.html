@@ -25,7 +25,7 @@
     <link href="../css/index.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-    </head>
+</head>
 
 <!-- =======================================
 Header
@@ -92,33 +92,33 @@ Full Screen Menu
 <!-- =======================================
 Side Nav
 ======================================= -->
-<div class="side-case-menu endangered-side">
+<div id="side-nav" class="side-case-menu endangered-side">
     <a id="summary-tab" class="side-tab" href="#summary-body" data-offset="80"><div>
-        <img id="tab1" src="../icons/side-tab1.svg" alt="Summary">
+        <img id="tab1" class="side-img" src="../icons/side-tab1.svg" alt="Summary">
         <p class="side">Summary</p>
     </div>
-    <a id="ux-research-tab" class="side-tab" href="#ux-research-body" data-offset="80"><div>
-        <img id="tab2" src="../icons/side-tab2.svg" alt="User Research">
+    <a id="ux-research-tab" class="side-tab" href="#ux-research1-body" data-offset="80"><div>
+        <img id="tab2" class="side-img" src="../icons/side-tab2.svg" alt="User Research">
         <p class="side">User<br>Research</p>
     </div></a>
     <a id="definition-tab" class="side-tab" href="#definition-body" data-offset="80"><div>
-        <img id="tab3" src="../icons/side-tab3.svg" alt="Definition & Ideation">
+        <img id="tab3" class="side-img"src="../icons/side-tab3.svg" alt="Definition & Ideation">
         <p class="side">Definition<br>& Ideation</p>
     </div></a>
     <a id="prototyping-tab" class="side-tab" href="#prototyping-body" data-offset="80"><div>
-        <img id="tab4" src="../icons/side-tab4.svg" alt="Prototyping & Testing">
+        <img id="tab4" class="side-img" src="../icons/side-tab4.svg" alt="Prototyping & Testing">
         <p class="side">Prototyping<br>& Testing</p>
     </div></a>
     <a id="final-tab" class="side-tab" href="#final-body" data-offset="80"><div>
-        <img id="tab5" src="../icons/side-tab5.svg" alt="Final Product">
+        <img id="tab5" class="side-img" src="../icons/side-tab5.svg" alt="Final Product">
         <p class="side">Final<br>Product</p>
     </div></a>
     <a id="reflection-tab" class="side-tab" href="#reflection-body" data-offset="80">
         <div>
-        <img id="tab6" src="../icons/side-tab6.svg" alt="Reflection">
+        <img id="tab6" class="side-img"src="../icons/side-tab6.svg" alt="Reflection">
         <p class="side">Reflection</p>
     </div></a>
-    <img class="side-menu-icon" id="side-close" src="../icons/side-menu-icon.svg" width=30px>
+    <!-- <img class="side-menu-icon" id="side-close" src="../icons/side-menu-icon.svg" width=30px> -->
 </div>
 
 <!-- =======================================
@@ -126,7 +126,7 @@ Hero title
 ======================================= -->
 <section class="container-fluid d-grid endangered-body">
     <div class="row container-fluid p-0 justify-content-center">
-        <div class="case-hero px-0 col-6">
+        <div class="case-hero px-0 col-12 col-lg-8 col-xl-6">
             <div>
                 <h1 class="text-center">Endangered Species Redesign</h1>
                 <div class="case-img1"></div>
@@ -140,8 +140,8 @@ Summary
 ======================================= -->
 <section id="summary-body" class="container-fluid d-grid justify-content-center summary-body">
     <div class="row px-0 container-fluid justify-content-center">
-        <div class="container-fluid wrapper summary col-6 px-0 row justify-content-center">
-            <div class="over-column p-0 pe-4 col-6">
+        <div class="container-fluid wrapper summary col-12 col-lg-8 col-xl-6 px-0 row justify-content-center">
+            <div class="over-column p-0 pe-4 col-12 col-lg-6">
                 <h2>Problem</h2>
                 <p>The government website shows <span class="bold">inconsistencies</span> in UI design and a <span class="bold">confusing</span> use of multiple search bars which <span class="bold">undersells</span> its amazing database on all endangered species in the US and abroad.</p>
                 <br>
@@ -153,7 +153,7 @@ Summary
                     <li>ability to save visual information for later use in the field.</li>
                 </ul></p>
             </div>
-            <div class="over-column p-0 ps-4 col-6">
+            <div class="over-column p-0 ps-0 ps-lg-4 col-12 col-lg-6">
                 <h2>Team</h2>
                 <p>Team members: Jerry Vu, Ricky Liu, Hoang Lan Nguyen</p>
                 <p>My role: UX research, IA & Site remapping, user testing, UI design, high-fidelity protototyping</p>
@@ -167,9 +167,9 @@ Summary
 <!-- =======================================
 User Research
 ======================================= -->
-<section class="container-fluid d-grid case-p-body" id="ux-research-body">
+<section class="container-fluid d-grid case-p-body" id="ux-research1-body">
     <div class="row p-0 container-fluid justify-content-center case-p-section">
-        <div class="case-p col-6 section">
+        <div class="case-p col-12 col-lg-8 col-xl-6 section">
             <h2>User Research</h2>
             <p>Although our user persona wasn’t based on prior user research or official website demographics, 
                 our user was essential to find out <span class="bold">what he would do on the website</span> 
@@ -190,7 +190,7 @@ User Research
         </div>
         <a href="#_" id="user-persona-overlay" class="position-fixed image-overlay">
             <div class="d-flex overlay-wrap justify-content-center align-items-center">
-                <div class="d-flex justify-content-center align-items-center position-relative image-modal">
+                <div class="d-flex align-items-center position-relative image-modal">
                     <img src="../images/Endangered/endangered-species-proto-persona.jpg" width="1000px" 
                     title="Proto persona: Michael McKinley" alt="Proto persona: Michael McKinley">
                     <div class="shrink-icon"></div>
@@ -200,9 +200,9 @@ User Research
     </div>
 </section>
 
-<section class="container-fluid d-grid case-p-body section">
+<section id="ux-research2-body" class="container-fluid d-grid case-p-body section">
     <div class="row p-0 justify-content-center case-p-section">
-        <div class="mx-auto col-6 case-p section">
+        <div class="mx-auto col-12 col-lg-8 col-xl-6 case-p section">
             <h2>Task Analysis</h2>
             <p>We identified a user flow for <span class="bold">how Michael would use the current website
                 </span> and conducted heuristic evaluation for the key features he'd interact with to achieve his goal 
@@ -260,9 +260,9 @@ User Research
         </div>
     </div>
 </section>
-<section class="container-fluid d-grid case-p-body section">
+<section id="ux-research3-body" class="container-fluid d-grid case-p-body section">
     <div class="row p-0 container-fluid justify-content-center p-0 case-p-section">
-        <div class="case-p section col-6">
+        <div class="case-p section col-12 col-lg-8 col-xl-6">
             <p>We then conducted a usability test on 5 users to identify current pain points and organized the findings using the prioritization matrix (use the slide deck to see test notes).
             </p>
             <p>Interesting insights include:
@@ -323,9 +323,9 @@ User Research
 <!-- =======================================
 Problem statement
 ======================================= -->
-<section class="d-grid container-fluid case-p-body problem-statement section">
+<section id="problem-body" class="d-grid container-fluid case-p-body problem-statement section">
     <div class="row p-0 justify-content-center p-0">
-        <div class="col-7 p-0 position-relative problem-text">
+        <div class="col-12 col-md-7 p-0 position-relative problem-text">
             <p class="problem bold state m-0">How might we help redesign the website so that users can
             successfully search for species in their area through navigation or search
             and able to save visual information for later use?</p>
@@ -339,7 +339,7 @@ Definition & Ideation
 ======================================= -->
 <section class="d-grid container-fluid case-p-body case-p-body section" id="definition-body">
     <div class="row p-0 justify-content-center p-0 case-p-section">
-        <div class="col-6 p-0 case-p">
+        <div class="col-12 col-lg-8 col-xl-6 p-0 case-p">
             <h2>Definition & Ideation</h2>
             <p>We identified a user flow for <span class="bold">how Michael would use the current website
             </span> and conducted heuristic evaluation for the key features he'd interact with to achieve his goal 
@@ -376,7 +376,7 @@ Definition & Ideation
 </section>
 <section class="d-grid container-fluid case-p-body case-p-body" style="margin-bottom: 80px">
     <div class="row p-0 justify-content-center p-0 case-p-section">
-        <div class="col-6 p-0 case-p section"><p>This “journey” for the most part lies in the 3 following categories out of 7:
+        <div class="col-12 col-lg-8 col-xl-6 p-0 case-p section"><p>This “journey” for the most part lies in the 3 following categories out of 7:
             <ul class=".ulist">
                 <li>Species Search;</li>
                 <li>Endangered Species Bulletin;</li>
@@ -391,7 +391,7 @@ Definition & Ideation
     </div>
     <a href="#_" id="sitemap" class="position-fixed image-overlay">
         <div class="d-flex overlay-wrap justify-content-center align-items-center">
-            <div class="d-flex justify-content-center align-items-center position-relative image-modal">
+            <div class="d-flex align-items-center position-relative image-modal">
                 <img src="../images/Endangered/endangered-species-site-map.png" width="1000px" 
                 title="New site map" alt="New site map">
                 <div class="shrink-icon"></div>
@@ -405,7 +405,7 @@ Prototyping & Testing
 ======================================= -->
 <section class="d-grid container-fluid case-p-body case-p-body section" id="prototyping-body">
     <div class="row p-0 justify-content-center p-0 case-p-section">
-        <div class="col-6 p-0 case-p">
+        <div class="col-12 col-lg-8 col-xl-6 p-0 case-p">
             <h2>Prototyping & Testing</h2>
             <p>Adaptive design required <span class="bold">desktop</span> and 
                 <span class="bold">mobile</span> view tests. UI style guide was used for the 5-second test to see how well 
@@ -465,9 +465,9 @@ Prototyping & Testing
     </div>
 </section>
 <!-- Prototyping : Navigation changes -->
-<section class="d-grid container-fluid case-p-body case-p-body section">
+<section id="nav-changes-body" class="d-grid container-fluid case-p-body case-p-body section">
     <div class="row p-0 justify-content-center p-0 case-p-section">
-        <div class="col-6 p-0 case-p">
+        <div class="col-12 col-lg-8 col-xl-6 p-0 case-p">
             <h2>Navigation Changes</h2>
             <p>Research shows that the navigation requires a more cohesive, intuitive layout:</p>
             <ol class="olist">
@@ -491,9 +491,9 @@ Prototyping & Testing
     </div>
 </section>
 <!-- Prototyping : Homepage Test -->
-<section class="d-grid container-fluid case-p-body case-p-body">
+<section id="homepage-test-body" class="d-grid container-fluid case-p-body case-p-body">
     <div class="row p-0 justify-content-center p-0 case-p-section">
-        <div class="col-6 p-0 case-p section">
+        <div class="col-12 col-lg-8 col-xl-6 p-0 case-p section">
             <h2>Homepage Test</h2>
             <p>5-second tests were conducted for the homepage of the stylized prototype. 
                 The findings from 3 user tests <span class="bold">validate</span> the proposed UI design in the following ways:
@@ -512,7 +512,7 @@ Prototyping & Testing
             </div></a>
         </div>
         <a href="#_" id="homepage-test" class="image-overlay position-fixed">
-            <div class="d-flex overlay-wrap justify-content-center align-items-center">
+            <div class="d-flex align-items-center image-modal">
                 <img src="../images/Endangered/endangered-species-homepage-test.png" 
                 width="1000px" title="proto persona: Michael McKinley" alt="proto persona Michael McKinley">
                 <div class="shrink-icon"></div>
@@ -521,9 +521,9 @@ Prototyping & Testing
     </div>
 </section>
 <!-- Prototyping : Changes to UI -->
-<section class="d-grid container-fluid case-p-body case-p-body">
+<section id="ui-changes-body" class="d-grid container-fluid case-p-body case-p-body">
     <div class="row p-0 justify-content-center p-0 case-p-section">
-        <div class="col-6 p-0 case-p" >
+        <div class="col-12 col-lg-8 col-xl-6 p-0 case-p" >
             <h2>Changes to UI</h2>
             <p>The findings led to small but impactful adjustments for a better experience:
                 <ul>
@@ -569,9 +569,9 @@ Prototyping & Testing
     </div>
 </section>
 <!-- Prototyping : Mobile Usability -->
-<section class="d-grid container-fluid case-p-body case-p-body section">
+<section id="mobile-usability-body" class="d-grid container-fluid case-p-body case-p-body section">
     <div class="row p-0 justify-content-center p-0 case-p-section">
-        <div class="col-6 p-0 case-p">
+        <div class="col-12 col-lg-8 col-xl-6 p-0 case-p">
             <h2>Mobile Usability</h2>
             <p>Our task was to produce adaptive redesign (desktop > mobile). 
                 We found that to achieve this, you still need to reiterate desktop to 
@@ -607,9 +607,9 @@ Prototyping & Testing
     </div>
 </section>
 <!-- Prototyping : Mobile Tests -->
-<section class="d-grid container-fluid case-p-body">
+<section id="mobile-test1-body" class="d-grid container-fluid case-p-body">
     <div class="row p-0 justify-content-center p-0 case-p-section">
-        <div class="col-6 p-0 case-p section">
+        <div class="col-12 col-lg-8 col-xl-6 p-0 case-p section">
             <h2>Mobile Tests</h2>
             <p>Based on Michael’s user path to search local endangered species in his area, 
             5 user tests were conducted on the mobile version. It was important to see 
@@ -627,7 +627,7 @@ Prototyping & Testing
             </p>
         </div>
         <a href="#_" id="KPIs" class="image-overlay position-fixed">
-            <div class="d-flex overlay-wrap justify-content-center align-items-center">
+            <div class="d-flex image-modal align-items-center">
                 <div style="position: relative">
                     <img src="../images/Endangered/KPIs.svg" width="1000px" 
                     title="proto persona: Michael McKinley" alt="proto persona Michael McKinley">
@@ -637,25 +637,25 @@ Prototyping & Testing
         </a>
     </div>
 </section>
-<section class="d-grid container-fluid x-ol-body" style="margin-bottom: 80px">
+<section id="mobile-test2-body" class="d-grid container-fluid x-ol-body" style="margin-bottom: 80px">
     <div class="row p-0 justify-content-center p-0 case-p-section">
-        <ol class="col-6 p-0 x-ol d-grid section olist">
+        <ol class="col-12 col-lg-8 col-xl-6 p-0 x-ol d-grid section olist">
             <div class="row">
-                <li class="col-4 x1">
+                <li class="col-12 col-md-4 x1">
                     <div style="margin-right: 20px">
                         Information hierarchy in search results.
                         <img class="imgx" src="../images/Endangered/UI Interactions/work on search results IA.png"
                         width="300px" title="search results need hierarchy" alt="search results need hierarchy">
                     </div>
                 </li>
-                <li class="col-4 x2">
+                <li class="col-12 col-md-4 x2">
                     <div style="margin-right: 20px">
                         Easy to access home button outside of the hamburger menu.
                         <img class="imgx" src="../images/Endangered/UI Interactions/work on home button and image hotspot.png"
                         width="300px" title="home button access" alt="home button access">
                     </div>
                 </li>
-                <li class="col-4 x3">
+                <li class="col-12 col-md-4 x3">
                     <div style="margin-right: 20px">
                         Bigger full view image hotspot and relevance to the species.
                         <img class="imgx" src="../images/Endangered/UI Interactions/work on home button and image hotspot.png"
@@ -669,80 +669,87 @@ Prototyping & Testing
 <!-- =======================================
 Final product
 ======================================= -->
-<div class="d-grid container-fluid case-p-body section" id="final-body">
-        <div class="wide-case-p"><h2>Final Product</h2>
-        <p class="centered">Our goal was to make the website as user-friendly as possible when using its species search feature and saving visual information for later use. 
-            You can switch between the user’s desktop and mobile journey.
-        </p></div>
-    <div class="case-p-body section">
-        <section class="final-p-section input-county">
-            <div class="case-p"><p>Michael starts inputting his county into the <span class="bold">search bar</span>.
+<section class="d-grid container-fluid case-p-body section" id="final-body">
+    <div class="row justify-content-center py-0 final-p-section">
+        <div class="col-12 col-lg-8 col-xl-6 p-0">
+            <h2>Final Product</h2>
+            <p>Our goal was to make the website as user-friendly as possible when using its species search feature and saving visual information for later use. 
+                You can switch between the user’s desktop and mobile journey.
+            </p>
+        </div>
+    </div>
+    <div class="row justify-content-center p-0 case-p-section">
+        <div class="col-12 col-lg-8 col-xl-6 p-0 case-p">
+            <p>Michael starts inputting his county into the <span class="bold">search bar</span>.
             Search <span class="bold">suggestions</span> show a "pin" which indicates a specific location.
-            He can also tap a specific profile "Mariposa Lily" or search everything by the keyword.
+            He can also tap a specific profile "Mariposa Lily" or search everything by the keyword.</p>
             <br>
-            Once he taps the "pin", he's given a number of results for <span class="bold">species profiles in his area</span>.
-            </p></div>
-            <div class="demo-frame">
-                <img class="demo MichaelSearches" src="../images/Endangered/UI Interactions/mobile v2 search.gif"
-                    width="300px" title="Michael searches in his area" alt="Michael searches in his area">
-                <div class="final-toggle">
-                    <div id="desktop-MichaelSearches" class="desktop-icon desktop-disabled"></div>
-                    <div id="mobile-MichaelSearches" class="mobile-icon mobile-active "></div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="case-p-body section">
-        <section class="final-p-section-mirror refine-search">
-            <div id="MichaelRefines-frame" class="demo-frame-mirror">
-                <img class="demo MichaelRefines" src="../images/Endangered/UI Interactions/mobile v2 refine.gif"
-                    width="300px" title="Michael hones down to mammals" alt="Michael hones down to mammals">
-                <div class="final-toggle">
-                    <div id="desktop-MichaelRefines" class="desktop-icon desktop-disabled"></div>
-                    <div id="mobile-MichaelRefines" class="mobile-icon mobile-active"></div>
-                </div>
-            </div>
-            <div id="MichaelRefines-p" class="case-p-mirror">
-                <p>Hm, Michael wants to refine his results to show only mammals since they are easier to spot. 
-                The San Joaquin Kit Fox seems like a large enough mammal to find..
-            </p></div>
-        </section>
-    </div>
-<div class="case-p-body section">
-        <p class="centered center-state">Michael can <span class="bold">swipe</span> through the images to get a better look of the fox.
-        The images include a short <span class="bold">description</span> of the species. There are 2 ways he can save the visual information:</p>
-</div>
-<ol class="double-p-body alphabetical section">
-    <li class="x1-2">
-        <div>
-            Tap the download button to quickly save on his device.
-            <div class="demo-frame-1-2">
-                <img class="MichaelDownloads" src="../images/Endangered/UI Interactions/mobile v2 download.gif"
-                width="300px" title="Michael taps the download button" alt="Michael taps the download button">
+            <p>Once he taps the "pin", he's given a number of results for <span class="bold">species profiles in his area</span>.
+            </p>
+        </div>
+        <div class="demo-frame">
+            <img class="demo MichaelSearches" src="../images/Endangered/UI Interactions/mobile v2 search.gif"
+                width="300px" title="Michael searches in his area" alt="Michael searches in his area">
+            <div class="final-toggle">
+                <div id="desktop-MichaelSearches" class="desktop-icon desktop-disabled"></div>
+                <div id="mobile-MichaelSearches" class="mobile-icon mobile-active "></div>
             </div>
         </div>
-    </li>
-    <li class="x2-2">
-        <div>
-            Open full view and save the image <span class="bold">manually.</span>
-            <div class="demo-frame-2-2">
-                <img class="MichaelSaves" src="../images/Endangered/UI Interactions/mobile v2 save.gif"
-                width="300px" title="Michael saves manually" alt="Michael saves manually">
+    </div>
+    <div class="row justify-content-center p-0 p-0 final-p-section">
+        <div class="col-12 col-lg-8 col-xl-6 p-0 case-p" id="MichaelRefines-p">
+            <p>Hm, Michael wants to refine his results to show only mammals since they are easier to spot. 
+            The San Joaquin Kit Fox seems like a large enough mammal to find..
+            </p>
+        </div>
+        <div id="MichaelRefines-frame" class="demo-frame-mirror">
+            <img class="demo MichaelRefines" src="../images/Endangered/UI Interactions/mobile v2 refine.gif"
+                width="300px" title="Michael hones down to mammals" alt="Michael hones down to mammals">
+            <div class="final-toggle">
+                <div id="desktop-MichaelRefines" class="desktop-icon desktop-disabled"></div>
+                <div id="mobile-MichaelRefines" class="mobile-icon mobile-active"></div>
             </div>
         </div>
-    </li>
-</ol>
-<div class="final-toggle">
-    <div id="desktop-Profile" class="desktop-icon desktop-disabled"></div>
-    <div id="mobile-Profile" class="mobile-icon mobile-active"></div>
-</div>
-
+    </div>
+    <div class="row justify-content-center p-0 final-p-section">
+        <div class="col-12 col-lg-8 col-xl-6 p-0 case-p" id="MichaelProfile">
+            <p> Michael can <span class="bold">swipe</span> through the images to get a better look of the fox.
+            The images include a short <span class="bold">description</span> of the species. There are 2 ways he can save the visual information:</p>
+            <div class="d-grid">
+                <ol class="row double-p-body alphabetical section p-0">
+                    <li class="position-relative x1-2 col-12 col-md-6" style="padding-right: 40px;">
+                        <div>
+                            <p>Tap the download button to quickly save on his device.</p>
+                            <div class="demo-frame-1-2">
+                                <img class="MichaelDownloads" src="../images/Endangered/UI Interactions/mobile v2 download.gif"
+                                width="300px" title="Michael taps the download button" alt="Michael taps the download button">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="position-relative x2-2 col-12 col-md-6">
+                        <div>
+                            <p>Open full view and save the image <span class="bold">manually</span>.</p>
+                            <div class="demo-frame-2-2">
+                                <img class="MichaelSaves" src="../images/Endangered/UI Interactions/mobile v2 save.gif"
+                                width="300px" title="Michael saves manually" alt="Michael saves manually">
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="final-toggle">
+                <div id="desktop-Profile" class="desktop-icon desktop-disabled"></div>
+                <div id="mobile-Profile" class="mobile-icon mobile-active"></div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- =======================================
 Reflection
 ======================================= -->
-<div id="reflection-body" class="d-grid container-fluid summary-body section">
+<section id="reflection-body" class="d-grid container-fluid summary-body section">
     <div class="row p-0 justify-content-center p-0 case-p-section">
-        <div class="col-6 summary">
+        <div class="col-12 col-lg-8 col-xl-6 summary">
             <div class="over-column1">
                 <h2>Reflection</h2>
                 <p>The <span class="bold">UI direction</span> and <span class="bold">style guide</span> 
@@ -762,17 +769,17 @@ Reflection
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <!-- =======================================
 See other studies
 ======================================= -->
 <section class="d-grid container-fluid other-studies-body section">
-    <div class="row p-0 justify-content-center p-0 case-p-section">
-        <div class="col-6 d-grid other-studies-h2">
+    <div class="row p-0 justify-content-center case-p-section">
+        <div class="col-12 col-lg-8 col-xl-6 d-grid">
             <div class="row p-0">
-                <h2>See Other Studies</h2>
-                <div id= "other-study1" class="col-6 narrow-card">
+                <h2 class="other-studies-h2">See Other Studies</h2>
+                <div id= "other-study1" class="col-12 col-md-6 narrow-card">
                     <div class="narrow-card-content">
                         <div id="card-thumbnail2" class="ncard-thumbnail"></div>
                         <h2 class="card-heading">e<span class="italic">motion</span> Mood Tracker App</h2>
@@ -783,7 +790,7 @@ See other studies
                     </div>
                     <div class="button narrow-button" id="see-more">see more</div>
                 </div>
-                <div id= "other-study2" class="col-6 narrow-card">
+                <div id= "other-study2" class="col-12 col-md-6 narrow-card">
                     <div class="narrow-card-content">
                         <div id="card-thumbnail3" class="ncard-thumbnail"></div>
                         <h2 class="card-heading">CORAL NPO Redesign</h2>
@@ -802,28 +809,30 @@ See other studies
 <!-- =======================================
 Footer
 ======================================= -->
-<footer class="container-fluid section">
-    <div class="footer-content">
-        <h2 id="footer-header">Let's work on solutions together!</h2>
-        <div class='contact'>
-            <a href="tel:6572522544">
-                <div class='contact-phone'>
-                    <img src='../icons/ph_phone-call-light.svg' title="mobile: +1 (657) 252-2544" sizes='32px 32px'>
-            </div></a>
-            <a href="mailto:nguyenhlan96@gmail.com">
-                <div class='contact-email'>
-                <img src='../icons/et_email.svg' title="email: nguyenhlan96@gmail.com" sizes='32px 32px'>
+<footer class="d-grid container-fluid section">
+    <div class="row p-0 justify-content-center">
+        <div class="footer-content col-12 col-sm-6">
+            <h2 id="footer-header">Let's work on solutions together!</h2>
+            <div class='contact'>
+                <a href="tel:6572522544">
+                    <div class='contact-phone'>
+                        <img src='../icons/ph_phone-call-light.svg' title="mobile: +1 (657) 252-2544" sizes='32px 32px'>
+                </div></a>
+                <a href="mailto:nguyenhlan96@gmail.com">
+                    <div class='contact-email'>
+                    <img src='../icons/et_email.svg' title="email: nguyenhlan96@gmail.com" sizes='32px 32px'>
+                </div>
+                <a href="https://www.linkedin.com/in/hoang-lan-nguyen-95658466/" target="_blank">
+                    <div class='contact-linkedin'>
+                        <img src='../icons/et_linkedin.svg' alt="linkedin" sizes='32px 32px'>
+                </div></a>
+                <a href="https://dribbble.com/teri_akimoto">
+                    <div class='contact-dribbble'>
+                    <img src='../icons/et_dribbble.svg' alt="dribbble" sizes='32px 32px'>
+                </div></a>
             </div>
-            <a href="https://www.linkedin.com/in/hoang-lan-nguyen-95658466/" target="_blank">
-                <div class='contact-linkedin'>
-                    <img src='../icons/et_linkedin.svg' alt="linkedin" sizes='32px 32px'>
-            </div></a>
-            <a href="https://dribbble.com/teri_akimoto">
-                <div class='contact-dribbble'>
-                <img src='../icons/et_dribbble.svg' alt="dribbble" sizes='32px 32px'>
-            </div></a>
+            <p>© Hoang Lan Nguyen 2020</p>
         </div>
-        <p>© Hoang Lan Nguyen 2020</p>
     </div>
 </footer>
 <!-- =======================================

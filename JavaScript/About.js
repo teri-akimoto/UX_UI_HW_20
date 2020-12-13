@@ -17,6 +17,23 @@ $(document).on("scroll", function() {
     }
 })
 // ------------------------------------------------------------------------------
+//Side Nav ----------------------------------------------------------------------
+var prevScrollpos = window.pageYOffset
+window.onscroll = function() {
+    if($(window).width() <= 768) {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+        document.getElementById("side-nav").style.top = "69px";
+        } else {
+        document.getElementById("side-nav").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+    else if($(window).width() > 768) {
+        document.getElementById("side-nav").style.top = "120px";
+    }
+}
+// ------------------------------------------------------------------------------
 //Carousel ----------------------------------------------------------------------
 $("#summary-tab, #ux-skills-tab, #tool-set-tab").click(function(e) {
     e.preventDefault();
@@ -30,7 +47,7 @@ $("#summary-tab, #ux-skills-tab, #tool-set-tab").click(function(e) {
 // ------------------------------------------------------------------------------
 //Carousel ----------------------------------------------------------------------
 $(".side-menu").click(function() {
-    if($(window).width() < 600) {
+    if($(window).width() < 768) {
         if ($(".side-menu").height() > 20) {
             console.log("shrink!");
             $(this).animate({height: '20'}, 300);

@@ -47,6 +47,7 @@ body {
 .section.visible {
     opacity: 1;
     transform: translate(0,0);
+    overflow: visible;
 }
 
 /* =======================================
@@ -61,7 +62,7 @@ nav {
     top: 0;
     background-color: rgba(241,214,219,0.25);
     backdrop-filter: blur(8px);
-    width: 100%;
+    width: 100vw;
     align-items: center;
     z-index: 100;
 }
@@ -101,7 +102,7 @@ nav {
     z-index: 100;
     top: -200vh;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     padding: 0;
     background-color: rgb(241, 214, 219);
@@ -312,6 +313,7 @@ HOME PAGE
     background-size: 100% auto;
     cursor: pointer;
     transition: all 1s ease;
+    min-height: 400px;
 }
 .card-thumbnail:hover {
     background-size: 120% auto;
@@ -348,8 +350,6 @@ footer {
     padding: 20px;
     backdrop-filter: blur(20px);
     background-color: rgba(241, 214, 219, 0.25);
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
     gap: 20px;
     padding: 40px 20px;
 }
@@ -357,7 +357,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-column: 4 / span 6;
 }
 #footer-header {
     text-align: center;
@@ -551,8 +550,9 @@ ABOUT
     color: black;
 }    
 .side-tab {
-        margin: 0 20px;
-    }
+    margin: 0 20px;
+    transition: all 1s ease;
+}
 .side-tab p {
     margin: 0 auto 20px auto;
     text-align: center;
@@ -564,12 +564,12 @@ ABOUT
     position: fixed;
     min-height: auto;
     width: calc(100% / 12 + 40px);
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     z-index: 99;
     transition: all 1s ease;
+    display: flex;
 }
 #see-resume {
     display: inline-block;
@@ -797,14 +797,9 @@ CASE STUDY 1/2/3
 section {
     width: 100%;
 }
-.x-ol-body, .case-p-body {
-    padding: 20px;
-}
-.wide-case-p {
-    grid-column: 3 / -3;
-}
-.case-p {
-    grid-column: 1 / span 3;
+.case-p-body, .x-ol-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .case-p h2 {
     margin-top: 0px;
@@ -936,7 +931,7 @@ section {
     text-align: left;
 }
 .x1, .x2, .x3 {
-    margin: 0;
+    margin-bottom: 0;
 }
 .x1-2 div, .x2-2 div, .x1 div, .x2 div, .x3 div {
     text-align: left;
@@ -964,12 +959,6 @@ section {
     grid-column: 3 / -3;
     display: flex;
     flex-direction: column;
-}
-.final-p-section {
-    grid-column: 3 / -1;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 20px;
 }
 .demo-frame, .demo-frame-mirror {
     grid-column: 5 / -1;
@@ -1037,22 +1026,9 @@ section {
 .center-state {
     grid-column: 3 / -3;
 }
-.double-p-body {
-    margin: 20px;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
-    /* list-style-position: inside; */
-}
 .alphabetical li {
     list-style-type: lower-latin;
     margin-bottom: 40px;
-}
-.x1-2 {
-    grid-column: 3 / span 3;
-}
-.x2-2 {
-    grid-column: 8 / span 3;
 }
 .demo-frame-1-2 {
     align-items: flex-end;
@@ -1091,20 +1067,14 @@ section {
     min-height: 300px;
     overflow: hidden;
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position-y: center;
-    cursor:pointer;
+    background-size: auto 100%;
+    background-position: center;
+    cursor: pointer;
     margin-bottom: 1em;
+    transition: all 1s ease;
 }
-#other-study1 {
-    grid-column: 3 / span 4;
-}
-#other-study2 {
-    grid-column: 7 / span 4;
-}
-.wide-card-content {
-    grid-column: 2 / -1;
-    grid-row: 1 / -1;
+.ncard-thumbnail:hover {
+background-size: auto 120%;
 }
 /* CASE STUDY 1/2/3 : Clickable images */
 .carousel, .full-deck {
@@ -1142,9 +1112,6 @@ section {
     cursor: default;
     transition: all 1s ease;
 }
-.overlay-wrap {
-    height: 100%;
-}
 .image-wrap, .click-wrap {
     width: 100%;
 }
@@ -1152,7 +1119,7 @@ section {
     height: 100%;
     width: 100%;
     object-fit: contain;
-}
+} 
 .click-image {
     position: relative;
     width: auto;
@@ -1167,16 +1134,11 @@ section {
 }
 .image-modal {
     position: relative;
-    max-width: 90%;
-    max-height: 90%;
+    overflow-x:auto;
+    overflow-y:auto;
 }
-.overlay-wrap img, .image-modal img {
-    object-fit: cover;
-    max-width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
-    background-color: white;
+.image-modal > img {
+    position: relative;
 }
 .carousel-item {
     display: flex;
@@ -1184,7 +1146,7 @@ section {
     align-items: center;
 }
 .carousel-item img {
-    max-height: 500px;
+    max-height: 600px;
     object-fit: contain;
     width: 100%;
 }
@@ -1293,52 +1255,13 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
-/* Case Study Layout */
-.x-ol-body, .case-p-body, .double-p-body, .final-p-section, .final-p-section-mirror, .summary {
-    padding-top: 40px !important;
-    grid-template-columns: repeat(8, 1fr);
-}
-.x-ol-list, .case-p-section, .final-p-section, .final-p-section-mirror, .over-column1, .over-column2 {
-    grid-column: 2 / -1;
-}
-.wide-case-p, .problem, .centered {
-    grid-column: 2 / -2;
-}
-.quotation-start {
-    margin-top: 188px;
-}
-.case-p {
-    grid-column: 1 / span 4;
-}
-.case-p-mirror {
-    grid-column: -1 / -5;
-}
-.x1-2 {
-    grid-column: 2 / span 3;
-}
-.x2-2 {
-    grid-column: 5 / span 3;
-}
-.x2 img, .x3 img, .x1 img {
-    height: 300px;
+/* Styling */
+.endangered-body h1 {
+    margin-block-start: 2em;
 }
 /* Clickable images */
-.demo-frame img, .demo-frame-1-2 img, .demo-frame-2-2 img{
-    object-fit: cover;
-    /* width: 100%; */
-}
-.click-image img {
-    width: auto;
-    height: 100%;
-    left: 0;
-}
-.site-map-snip {
-    left: 0px;
-}
-.statistics {
-    height: auto !important;
-    width: 100% !important;
-}
+
+
 /* Navigation Styles */
 .logo {
     display: none;
@@ -1354,7 +1277,7 @@ section {
 #menu {
     padding-bottom: 20px;
 }
-    
+
 /* Hero Styles */
 .hero {
     grid-template-columns: repeat(4, 1fr);
@@ -1371,23 +1294,21 @@ section {
     margin: 0;
 }
 .wide-card {
-    /* grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
 }
 .card-thumbnail {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    min-height: 200px;
+    min-height: 300px;
     background-size: cover;
     background-position-x: center;
 }
 .ncard-thumbnail {
     background-size: cover;
     background-position-x: center;
-    min-height: 200px;
 }
 /* About Styles */
 #ux-skill1, #ux-skill2, #ux-skill3 {
@@ -1422,6 +1343,32 @@ section {
 #other-study2 {
     grid-column: 5 / span 3;
 }
+/* Case Study Styles */
+#side-nav {
+    position: fixed;
+    width: 100vw;
+    min-height: 0;
+    top: 69px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    background-color: rgba(241,214,219,0.25);
+    backdrop-filter: blur(8px);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: flex;
+    transition: top 1s ease;
+    padding: 20px;
+}
+.side-case-menu::-webkit-scrollbar {
+   width: 0px;
+   height: 0px;
+   background: transparent;
+}
 /* Button Styles */
 .see-more {
     display: block;
@@ -1435,15 +1382,10 @@ section {
     top: 10px;
 }
 /* Footer Styles */
-footer {
-    grid-template-columns: repeat(4, 1fr);
-}
-.footer-content {
-    grid-column: 1 / -1;
-}
+
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
 /* Side Navigation */
 .side-menu {
     position: fixed;
@@ -1452,7 +1394,7 @@ footer {
     padding: 0 auto;
     top: 70px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center !important;
     align-items: flex-start;
     background-color: rgba(241,214,219,0.25);
     backdrop-filter: blur(8px);
@@ -1480,7 +1422,7 @@ footer {
     grid-column: 1 / 2;
     background-size: cover;
 }
-/* Styping */
+/* Styling */
 h3 {
     margin-block-start: 1em;
 }
@@ -1498,7 +1440,7 @@ h3 {
     animation: 2s ease;
 }
 /* Case Study Side Navigation */
-.side-case-menu {
+#side-nav {
     position: fixed;
     width: 100%;
     min-height: 0;
@@ -1514,14 +1456,15 @@ h3 {
     backdrop-filter: blur(8px);
     -ms-overflow-style: none;
     scrollbar-width: none;
-}
-.side-case-menu::-webkit-scrollbar {
-   width: 0px;
-   height: 0px;
-   background: transparent;
+    display: flex;
+    transition: top 1s ease;
+    padding: 20px;
 }
 .side-tab {
     flex: 0 0 auto;
+}
+.side-tab p {
+    margin: 0 auto;
 }
 /* UX Skills */
 #my-skills-body {
@@ -1571,7 +1514,7 @@ h3 {
     padding: 80px 0 0 0;
 }
 .endangered-body h1 {
-    margin-block-start: 0.67em;
+    font-size: 3.5em;
 }
 .case-hero {
     grid-template-columns: repeat(4, 1fr);
@@ -1581,30 +1524,25 @@ h3 {
 }
 /* Case Study : Problem Statement */
 .quotation-start {
-    width: 32px;
-    height: 32px;
-    left: 20px;
-    margin-top: 154px;
+    left: 1em;
+    bottom: -2em;
 }
 .quotation-end {
-    width: 32px;
-    height: 32px;
-    right: 20px;
-    margin-top: -10px;
+    right: 1em;
+    top: -2em;
 }
 /* Case Study : Main body layouts */
 .case-p-body, .x-ol-body, .double-p-body, .summary-body {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
-    overflow: auto;
 }
 
 .final-toggle {
     margin-bottom: 40px;
 }
 .double-p-body {
-    margin: 0;
+    list-style-position: inside;
 }
 .case-p-section, .x-ol-list, .x-ol, .final-p-section, .final-p-section-mirror {
     display: flex;
